@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas class="background"></canvas>
+
+    <div class="row">
+
+        <div class="col s12 m9 l10 ">
+            <div class="page section scrollspy" id="introduction">
+                <div class="menu" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <H2>Home</H2>
+                </div>
+                <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="quote">
+                        some
+                    </div>
+                    <div class="quote">
+                        some
+                    </div>
+                    <div class="quote">
+                        some
+                    </div>
+                </div>
+                <a href="#structure" class="scroll-down" address="true"></a>
+
+            </div>
+            <div class="page section scrollspy" id="structure">
+                <div class="menu" data-aos="zoom-out-right" data-aos-offset="300" data-aos-duration="3000" data-aos-easing="ease-in-sine">
+
+                    <H2 class="">Home</H2>
+                </div>
+                <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <div class="quote">
+                        some
+                    </div>
+                    <div class="quote">
+                        some
+                    </div>
+                    <div class="quote">
+                        some
+                    </div>
+                </div>
+            </div>
+            <div class="page section scrollspy" id="initialization">
+                <div class="menu" data-aos="zoom-out-right" data-aos-offset="300" data-aos-duration="3000" data-aos-easing="ease-in-sine">
+                    <H2>Home</H2>
+                </div>
+                <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <div class="quote">
+                        some
+                    </div>
+                    <div class="quote">
+                        some
+                    </div>
+                    <div class="quote">
+                        some
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col hide-on-small-only m3 l2" id="pushpin">
+            <ul class="section table-of-contents">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#initialization">Intialization</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#pushpin').pushpin({
+            right: 0
+        });
+        $('.scrollspy').scrollSpy({
+            scrollOffset: 0,
+            top: 10
+        });
+        AOS.init();
+        Particles.init({
+            selector: '.background',
+            maxParticles: 100,
+            connectParticles: true,
+            color: 'white',
+
+        })
+
+        $(function () {
+            $('.scroll-down').click(function () {
+                $('html, body').animate({ scrollTop: $('section.ok').offset().top }, 'slow');
+                return false;
+            });
+        });
+        // init on window load
+        // lax.setup()
+
+        // // update every scroll
+        // const updateLax = () => {
+        //     lax.update(window.scrollY)
+        //     window.requestAnimationFrame(updateLax)
+        // }
+
+        // window.requestAnimationFrame(updateLax)
+    });
+
+</script>
+
+</html>

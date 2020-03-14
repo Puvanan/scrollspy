@@ -1,0 +1,116 @@
+.body , html{
+    background-color: #111010;
+}
+.menu{
+    color: white;
+    text-align: center;
+}
+.container{
+    padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+.container .quote{
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+    color: white;
+    text-align: center;
+    height: 20rem;
+    background: rgb(113, 159, 0);
+    
+}
+.containersub1{
+    padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+.containersub1 .quote{
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+    color: white;
+    text-align: center;
+    height: 20rem;  
+}
+#pushpin{
+    right: 0;
+    top: 25% !important;
+}
+ .page{
+     height: 100vh;
+ }
+ 
+ @media only screen and (max-width: 1200px) {
+    .page {
+      height: auto;
+    }
+  }
+.background {  
+    position: absolute;      
+    display:block;     
+    top: 0;      
+    left: 0;      
+    z-index: 0;
+}
+section.ok{
+  background-color: #555;
+}
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
