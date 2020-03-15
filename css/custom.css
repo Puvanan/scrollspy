@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
+  
 }
 .container .quote{
     border-radius: 2rem;
@@ -17,7 +18,7 @@
     color: white;
     text-align: center;
     height: 20rem;
-    background: rgb(113, 159, 0);
+    background: #04BF68;
     
 }
 .containersub1{
@@ -39,6 +40,7 @@
 }
  .page{
      height: 100vh;
+     
  }
  
  @media only screen and (max-width: 1200px) {
@@ -113,4 +115,11 @@ section.ok{
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
   }
+}
+
+.content-container{
+  background-color: #142601;
+  height: 75%;
+  border-radius: 2rem;
+  margin-left: 2rem;
 }

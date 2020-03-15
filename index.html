@@ -20,53 +20,64 @@
 
         <div class="col s12 m9 l10 ">
             <div class="page section scrollspy" id="introduction">
-                <div class="menu" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <H2>Home</H2>
+                <div class="content-container">
+                    <div class="menu" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <H2>Home</H2>
+                    </div>
+                    <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="quote">
+                            some
+                        </div>
+                        <div class="quote">
+                            some
+                        </div>
+                        <div class="quote">
+                            some
+                        </div>
+                    </div>
+                    <a href="#structure" class="scroll-down" address="true"></a>
                 </div>
-                <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <div class="quote">
-                        some
-                    </div>
-                    <div class="quote">
-                        some
-                    </div>
-                    <div class="quote">
-                        some
-                    </div>
-                </div>
-                <a href="#structure" class="scroll-down" address="true"></a>
-
             </div>
             <div class="page section scrollspy" id="structure">
-                <div class="menu" data-aos="zoom-out-right" data-aos-offset="300" data-aos-duration="3000" data-aos-easing="ease-in-sine">
+                <div class="content-container"data-aos="fade-zoom-in" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
 
-                    <H2 class="">Home</H2>
-                </div>
-                <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                    <div class="quote">
-                        some
+                    <div class="menu" data-aos="zoom-out-right" data-aos-offset="300" data-aos-duration="3000"
+                        data-aos-easing="ease-in-sine">
+                        <H2 class="">Home</H2>
                     </div>
-                    <div class="quote">
-                        some
-                    </div>
-                    <div class="quote">
-                        some
+                    <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <div class="quote">
+                            some
+                        </div>
+                        <div class="quote">
+                            some
+                        </div>
+                        <div class="quote">
+                            some
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="page section scrollspy" id="initialization">
-                <div class="menu" data-aos="zoom-out-right" data-aos-offset="300" data-aos-duration="3000" data-aos-easing="ease-in-sine">
-                    <H2>Home</H2>
-                </div>
-                <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                    <div class="quote">
-                        some
+                <div class="content-container">
+
+                    <div class="menu" data-aos="zoom-out-right" data-aos-offset="300" data-aos-duration="3000"
+                        data-aos-easing="ease-in-sine">
+
+                        <H2>Home</H2>
                     </div>
-                    <div class="quote">
-                        some
-                    </div>
-                    <div class="quote">
-                        some
+                    <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <div class="quote">
+                            some
+                        </div>
+                        <div class="quote">
+                            some
+                        </div>
+                        <div class="quote">
+                            some
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,14 +105,6 @@
             top: 10
         });
         AOS.init();
-        Particles.init({
-            selector: '.background',
-            maxParticles: 100,
-            connectParticles: true,
-            color: 'white',
-
-        })
-
         $(function () {
             $('.scroll-down').click(function () {
                 $('html, body').animate({ scrollTop: $('section.ok').offset().top }, 'slow');
